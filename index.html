@@ -52,13 +52,17 @@
         flex-direction: column;
         gap: 20px;
     }
-    .profile-left {
-        order: 2;              /* 文字放在后面 */
-    }
-    .profile-right {
-        order: 1;              /* 照片放在标题和文字之间 */
-        margin-top: 0;         /* 移动端不需要额外偏移 */
-    }
+    .profile-left:first-child {
+    margin-bottom: 0;  /* 标题下方不留间距 */
+}
+.profile-right {
+    margin-top: 0;     /* 照片上方不留间距 */
+    padding-top: 0;
+}
+
+    .profile-left h2 {
+    margin-bottom: 0;
+}
 
     /* ----- 为所有主要内容容器增加左右边距 ----- */
     #main-wrap .container {
