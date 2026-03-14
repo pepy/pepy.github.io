@@ -28,6 +28,18 @@
         }
 
         /* 使两列表格在窄屏下堆叠显示 */
+        /* 桌面端：将照片下移至与第一段文字对齐 */
+@media screen and (min-width: 641px) {
+    .profile-image-container {
+        margin-top: 150px;  /* 调整此值可控制照片上下位置 */
+    }
+}
+/* 移动端：取消下移，照片自然在标题下方 */
+@media screen and (max-width: 640px) {
+    .profile-image-container {
+        margin-top: 20px;  /* 保持与文字间距，可自行微调 */
+    }
+}
         @media screen and (max-width: 640px) {
             .wsite-multicol-table,
             .wsite-multicol-table-wrap,
@@ -130,62 +142,61 @@
         <div class="container">
             <div id="wsite-content" class="wsite-elements wsite-not-footer">
 
-                <!-- Two‑column layout: name + image -->
-                <div>
-                    <div class="wsite-multicol">
-                        <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-                            <table class="wsite-multicol-table">
-                                <tbody class="wsite-multicol-tbody">
-                                    <tr class="wsite-multicol-tr">
-                                        <!-- Left column: text -->
-                                        <td class="wsite-multicol-col" style="width:100%; padding:0 15px;">
-                                            <h2 style="text-align:left;">
-                                                <font style="font-weight: bold;" size="7">Pan Peng (彭攀)</font>
-                                                <br>
-                                            </h2>
-                                            <span class="imgPusher" style="float:left;height:0px"></span>
-                                            <div class="paragraph" style="text-align:left;display:block;">
-                                                <span style="display:none;">_</span><br><span></span>
-                                            </div>
-                                            <hr style="clear:both;visibility:hidden;width:100%;">
-                                            <div class="paragraph" style="text-align:left;display:block;">
-                                                <font size="4">
-                                                    I am a faculty member (特任教授) in the <a href="http://en.cs.ustc.edu.cn" target="_blank">School of Computer Science and Technology</a> of University of Science and Technology of China (USTC). <br><br>
-                                                </font>
-                                            </div>
-                                            <div class="paragraph" style="text-align:left;display:block;">
-                                                <font size="4">
-                                                    I was a long-term participant at UC Berkeley's <a href="https://simons.berkeley.edu/homepage" target="_blank">Simons Institute</a> program in <a href="https://simons.berkeley.edu/programs/sublinear-algorithms" target="_blank">Sublinear Algorithms</a>. I was a lecturer (assistant professor) in the Department of Computer Science at University of Sheffield, UK. Before that, I held postdoc positions of TU Dortmund, Germany at the research group of Prof. <a href="https://cds.uni-koeln.de/en/people/core-scientists/prof-dr-christian-sohler" target="_blank">Christian Sohler</a> and University of Vienna, Austria at the research group of Prof. <a href="https://homepage.univie.ac.at/monika.henzinger/" target="_blank">Monika Henzinger</a>. I got my Ph.D under supervision of Prof. <a href="https://scse.buaa.edu.cn/info/1078/5403.htm" target="_blank">Angsheng Li</a>, in the Institute of Software, Chinese Academy of Sciences in 2013. I received my bachelor degree in Mathematics from Beijing Normal University in 2007.<br><br>
-                                                </font>
-                                            </div>
-                                        </td>
-                                        <!-- Right column: profile image -->
-                                        <td class="wsite-multicol-col" style="width:35%; padding:0 15px;">
-                                            <div>
-                                                <div class="wsite-image wsite-image-border-none " style="padding-top:130px;padding-bottom:0;margin-left:0;margin-right:10px;text-align:center">
-                                                    <a>
-                                                        <img src="index_files/pan.JPG" alt="Pan Peng" style="max-width:100%; width:200px; height:auto;">
-                                                    </a>
-                                                    <div style="display:block;font-size:90%"></div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                <!-- Two‑column layout: name + image (优化照片位置) -->
+<div>
+    <div class="wsite-multicol">
+        <div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+            <table class="wsite-multicol-table">
+                <tbody class="wsite-multicol-tbody">
+                    <tr class="wsite-multicol-tr">
+                        <!-- Left column: text (保持不变) -->
+                        <td class="wsite-multicol-col" style="width:65%; padding:0 15px; vertical-align:top;">
+                            <h2 style="text-align:left; margin-top:0;">
+                                <font style="font-weight: bold;" size="7">Pan Peng (彭攀)</font>
+                                <br>
+                            </h2>
+                            <!-- 原有占位元素保留，不影响 -->
+                            <span class="imgPusher" style="float:left;height:0px"></span>
+                            <div class="paragraph" style="text-align:left;display:block;">
+                                <span style="display:none;">_</span><br><span></span>
+                            </div>
+                            <hr style="clear:both;visibility:hidden;width:100%;">
+                            <div class="paragraph" style="text-align:left;display:block;">
+                                <font size="4">
+                                    I am a faculty member (特任教授) in the <a href="http://en.cs.ustc.edu.cn" target="_blank">School of Computer Science and Technology</a> of University of Science and Technology of China (USTC). <br><br>
+                                </font>
+                            </div>
+                            <div class="paragraph" style="text-align:left;display:block;">
+                                <font size="4">
+                                    I was a long-term participant at UC Berkeley's <a href="https://simons.berkeley.edu/homepage" target="_blank">Simons Institute</a> program in <a href="https://simons.berkeley.edu/programs/sublinear-algorithms" target="_blank">Sublinear Algorithms</a>. I was a lecturer (assistant professor) in the Department of Computer Science at University of Sheffield, UK. Before that, I held postdoc positions of TU Dortmund, Germany at the research group of Prof. <a href="https://cds.uni-koeln.de/en/people/core-scientists/prof-dr-christian-sohler" target="_blank">Christian Sohler</a> and University of Vienna, Austria at the research group of Prof. <a href="https://homepage.univie.ac.at/monika.henzinger/" target="_blank">Monika Henzinger</a>. I got my Ph.D under supervision of Prof. <a href="https://scse.buaa.edu.cn/info/1078/5403.htm" target="_blank">Angsheng Li</a>, in the Institute of Software, Chinese Academy of Sciences in 2013. I received my bachelor degree in Mathematics from Beijing Normal University in 2007.<br><br>
+                                </font>
+                            </div>
+                        </td>
+                        <!-- Right column: profile image (添加下移类) -->
+                        <td class="wsite-multicol-col" style="width:35%; padding:0 15px; vertical-align:top;">
+                            <div class="profile-image-container">
+                                <div class="wsite-image wsite-image-border-none" style="text-align:center;">
+                                    <a>
+                                        <img src="index_files/pan.JPG" alt="Pan Peng" style="max-width:100%; width:200px; height:auto;">
+                                    </a>
+                                    <div style="display:block;font-size:90%"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
-                <!-- Research interests -->
-                <div class="paragraph" style="text-align:left;display:block;">
-                    <font size="4">
-                        My research interests lie at the intersection of theoretical computer science, network science, and data science. Currently, I am focused on sublinear algorithms, graph algorithms, and the privacy and robustness of algorithms.<br><br>
-
-                        I lead the <a href="https://pepy.github.io/antbag/" target="_blank">AntBag</a> group. 
-                    </font>
-                </div>
-
+<!-- Research interests (不变) -->
+<div class="paragraph" style="text-align:left;display:block;">
+    <font size="4">
+        My research interests lie at the intersection of theoretical computer science, network science, and data science. Currently, I am focused on sublinear algorithms, graph algorithms, and the privacy and robustness of algorithms.<br><br>
+        I lead the <a href="https://pepy.github.io/antbag/" target="_blank">AntBag</a> group. 
+    </font>
+</div>
                 <!-- Commented out call for students (preserved exactly) -->
                 <div class="paragraph" style="text-align:left;display:block;">
                     <font size="4">
