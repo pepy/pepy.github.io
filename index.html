@@ -1,26 +1,23 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
-    <title>Pan Peng's Homepage</title>
-
-    <!-- Open Graph / Social Media Meta -->
-    <meta property="og:title" content="Pan Peng's Homepage">
-    <meta property="og:description" content="Pan Peng's Homepage">
-
-    <!-- SEO Meta -->
-    <meta name="description" content="Pan Peng's Homepage">
-    <meta name="keywords" content="Pan Peng, Theoretical Computer science, complexity, big data, data mining, sublinear algorithms, graph algorithms, Local algorithms, Community, Institute of Software, Chinese Academy of Sciences, TU Dortmund, University of Vienna, University of Sheffield, University of Science and Technology of China">
-
-    <!-- Stylesheets (kept exactly as original) -->
-    <link id="wsite-base-style" rel="stylesheet" type="text/css" href="./index_files/sites.css">
-    <link rel="stylesheet" type="text/css" href="./index_files/fancybox.css">
-    <link rel="stylesheet" type="text/css" href="./index_files/main_style.css" title="wsite-theme-css">
-    <link href="./index_files/css" rel="stylesheet" type="text/css">
-
-    <!-- 响应式优化：针对手机界面调整布局，同时不影响桌面显示 -->
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" name="viewport"/>
+<title>Pan Peng's Homepage</title>
+<!-- Open Graph / Social Media Meta -->
+<meta content="Pan Peng's Homepage" property="og:title"/>
+<meta content="Pan Peng's Homepage" property="og:description"/>
+<!-- SEO Meta -->
+<meta content="Pan Peng's Homepage" name="description"/>
+<meta content="Pan Peng, Theoretical Computer science, complexity, big data, data mining, sublinear algorithms, graph algorithms, Local algorithms, Community, Institute of Software, Chinese Academy of Sciences, TU Dortmund, University of Vienna, University of Sheffield, University of Science and Technology of China" name="keywords"/>
+<!-- Stylesheets (kept exactly as original) -->
+<link href="./index_files/sites.css" id="wsite-base-style" rel="stylesheet" type="text/css"/>
+<link href="./index_files/fancybox.css" rel="stylesheet" type="text/css"/>
+<link href="./index_files/main_style.css" rel="stylesheet" title="wsite-theme-css" type="text/css"/>
+<link href="./index_files/css" rel="stylesheet" type="text/css"/>
+<!-- 响应式优化：针对手机界面调整布局，同时不影响桌面显示 -->
+<style>
         /* 通用图片响应式 */
         img {
             max-width: 100%;
@@ -95,390 +92,188 @@
         /* 但为了简洁，此处省略重复部分，实际使用时请保留完整原有样式 */
         /* 重要：原有关于两列表格的样式（如 .wsite-multicol-table 等）需要保留或调整 */
         /* 我们将在下方完整 HTML 中保留所有原有样式，仅修改前两列部分 */
-    </style>
+    
+
+/* ----- Publication view switcher and topic tags ----- */
+.pub-view-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 4px 0 20px 0;
+}
+.pub-view-btn {
+    border: 1px solid #999;
+    background: #fff;
+    color: #444;
+    padding: 6px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.pub-view-btn:hover {
+    background: #f3f3f3;
+}
+.pub-view-btn.active {
+    background: #555;
+    color: #fff;
+    border-color: #555;
+}
+.pub-entry {
+    margin-bottom: 18px;
+}
+.pub-entry .pub-tags {
+    margin-top: 3px;
+}
+.pub-tag {
+    display: inline-block;
+    padding: 1px 7px;
+    margin: 2px 5px 0 0;
+    border-radius: 10px;
+    background: #f0f0f0;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+.pub-view-note {
+    color: #777;
+    font-size: 14px;
+    margin: -5px 0 16px 0;
+}
+.topic-group {
+    margin-bottom: 30px;
+}
+.topic-group-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 14px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+}
+#pub-by-topic {
+    display: none;
+}
+@media screen and (max-width: 640px) {
+    .pub-view-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    .pub-tag {
+        font-size: 11px;
+    }
+}
+</style>
 </head>
 <body>
-    <!-- Navigation bar (unchanged) -->
-   
-
-    <!-- Main content -->
-    <div id="main-wrap">
-        <div class="container">
-            <div id="wsite-content" class="wsite-elements wsite-not-footer">
-
-                <!-- 两列布局：左列包含标题和文字，右列包含照片 -->
+<!-- Navigation bar (unchanged) -->
+<!-- Main content -->
+<div id="main-wrap">
+<div class="container">
+<div class="wsite-elements wsite-not-footer" id="wsite-content">
+<!-- 两列布局：左列包含标题和文字，右列包含照片 -->
 <div class="profile-grid">
-    <!-- 左列：标题 + 所有文字（含原有占位符） -->
-    <div class="profile-left">
-        <h2 style="text-align:left; margin-top:0;">
-            <font style="font-weight: bold;" size="7">Pan Peng (彭攀)</font>
-            <br>
-        </h2>
-        <!-- 原有的占位元素（保持原样） -->
-        <span class="imgPusher" style="float:left;height:0px"></span>
-        <div class="paragraph" style="text-align:left;display:block;">
-            <span style="display:none;">_</span><br><span></span>
-        </div>
-        <hr style="clear:both;visibility:hidden;width:100%;">
-        <div class="paragraph" style="text-align:left;display:block;">
-            <font size="4">
-                I am a faculty member (特任教授) in the <a href="http://en.cs.ustc.edu.cn" target="_blank">School of Computer Science and Technology</a> of University of Science and Technology of China (USTC). <br><br>
-            </font>
-        </div>
-        <div class="paragraph" style="text-align:left;display:block;">
-            <font size="4">
-                I was a long-term participant at UC Berkeley's <a href="https://simons.berkeley.edu/homepage" target="_blank">Simons Institute</a> program in <a href="https://simons.berkeley.edu/programs/sublinear-algorithms" target="_blank">Sublinear Algorithms</a>. I was a lecturer (assistant professor) in the Department of Computer Science at University of Sheffield, UK. Before that, I held postdoc positions of TU Dortmund, Germany at the research group of Prof. <a href="https://cds.uni-koeln.de/en/people/core-scientists/prof-dr-christian-sohler" target="_blank">Christian Sohler</a> and University of Vienna, Austria at the research group of Prof. <a href="https://homepage.univie.ac.at/monika.henzinger/" target="_blank">Monika Henzinger</a>. I got my Ph.D under supervision of Prof. <a href="https://scse.buaa.edu.cn/info/1078/5403.htm" target="_blank">Angsheng Li</a>, in the Institute of Software, Chinese Academy of Sciences in 2013. I received my bachelor degree in Mathematics from Beijing Normal University in 2007.<br><br>
-            </font>
-        </div>
-    </div>
-
-    <!-- 右列：照片 -->
-    <div class="profile-right">
-        <div class="profile-image-container">
-            <div class="wsite-image wsite-image-border-none" style="text-align:center;">
-                <a>
-                    <img src="index_files/pan.JPG" alt="Pan Peng" style="max-width:100%; width:200px; height:auto;">
-                </a>
-                <div style="display:block;font-size:90%"></div>
-            </div>
-        </div>
-    </div>
+<!-- 左列：标题 + 所有文字（含原有占位符） -->
+<div class="profile-left">
+<h2 style="text-align:left; margin-top:0;">
+<font size="7" style="font-weight: bold;">Pan Peng (彭攀)</font>
+<br/>
+</h2>
+<!-- 原有的占位元素（保持原样） -->
+<span class="imgPusher" style="float:left;height:0px"></span>
+<div class="paragraph" style="text-align:left;display:block;">
+<span style="display:none;">_</span><br/><span></span>
 </div>
-                <!-- 研究兴趣（保持不变） -->
-                <div class="paragraph" style="text-align:left;display:block;">
-                    <font size="4">
-                        My research interests lie at the intersection of theoretical computer science, network science, and data science. Currently, I am focused on sublinear algorithms, graph algorithms, and the privacy and robustness of algorithms.
+<hr style="clear:both;visibility:hidden;width:100%;"/>
+<div class="paragraph" style="text-align:left;display:block;">
+<font size="4">
+                I am a faculty member (特任教授) in the <a href="http://en.cs.ustc.edu.cn" target="_blank">School of Computer Science and Technology</a> of University of Science and Technology of China (USTC). <br/><br/>
+</font>
+</div>
+<div class="paragraph" style="text-align:left;display:block;">
+<font size="4">
+                I was a long-term participant at UC Berkeley's <a href="https://simons.berkeley.edu/homepage" target="_blank">Simons Institute</a> program in <a href="https://simons.berkeley.edu/programs/sublinear-algorithms" target="_blank">Sublinear Algorithms</a>. I was a lecturer (assistant professor) in the Department of Computer Science at University of Sheffield, UK. Before that, I held postdoc positions of TU Dortmund, Germany at the research group of Prof. <a href="https://cds.uni-koeln.de/en/people/core-scientists/prof-dr-christian-sohler" target="_blank">Christian Sohler</a> and University of Vienna, Austria at the research group of Prof. <a href="https://homepage.univie.ac.at/monika.henzinger/" target="_blank">Monika Henzinger</a>. I got my Ph.D under supervision of Prof. <a href="https://scse.buaa.edu.cn/info/1078/5403.htm" target="_blank">Angsheng Li</a>, in the Institute of Software, Chinese Academy of Sciences in 2013. I received my bachelor degree in Mathematics from Beijing Normal University in 2007.<br/><br/>
+</font>
+</div>
+</div>
+<!-- 右列：照片 -->
+<div class="profile-right">
+<div class="profile-image-container">
+<div class="wsite-image wsite-image-border-none" style="text-align:center;">
+<a>
+<img alt="Pan Peng" src="index_files/pan.JPG" style="max-width:100%; width:200px; height:auto;"/>
+</a>
+<div style="display:block;font-size:90%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 研究兴趣（保持不变） -->
+<div class="paragraph" style="text-align:left;display:block;">
+<font size="4">
+                        My research interests lie at the intersection of theoretical computer science, network science, and data science. Currently, I am focused on sublinear algorithms, graph algorithms, and the privacy and robustness of algorithms. I am also interested in the intersections of these algorithmic areas with quantum computing and large language models (LLMs).
                     </font>
-                </div>
-                <!-- Commented out call for students (preserved exactly) -->
-                <div class="paragraph" style="text-align:left;display:block;">
-                    <font size="4">
-                        <span style="color:rgb(255, 0, 0)">
-                            <!--
+</div>
+<!-- Commented out call for students (preserved exactly) -->
+<div class="paragraph" style="text-align:left;display:block;">
+<font size="4">
+<span style="color:rgb(255, 0, 0)">
+<!--
                             I am currently looking for <b>self-motivated students</b> with good background in mathematics and/or programming, and <b>postdocs</b> to work with me. <font size="4"><span style="color:rgb(119, 119, 119)"> Please contact me directly with your CV. <br />
                             <br />
                             </font></div>
                             </font></div>
                             -->
-                        </span>
-                    </font>
-                </div>
-
-                <!-- Spacer + horizontal rule -->
-                <div>
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                    <hr class="styled-hr" style="width:100%;">
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                </div>
-
-
-                <!-- Quick navigation links (优化移动端换行) -->
-                <div>
-                    <div id="738546529142999705" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml">
-                        <font size="4">
-                            <ul style="margin:0; padding:0; list-style:none;">
-                                <a href="https://pepy.github.io/antbag/" target="_blank">The AntBag</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="#pub">Publications</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="#teach">Teaching</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="#committees">Program Committees</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="#contact">Contact Information</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>
+</font>
+</div>
+<!-- Spacer + horizontal rule -->
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"/>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+<!-- Quick navigation links (优化移动端换行) -->
+<div>
+<div align="left" class="wcustomhtml" id="738546529142999705" style="width: 100%; overflow-y: hidden;">
+<font size="4">
+<ul style="margin:0; padding:0; list-style:none;">
+<a href="https://pepy.github.io/antbag/" target="_blank">The AntBag</a>         
+                                <a href="#committees">Program Committees</a>          
+                                <a href="#pub">Publications</a>            
+                                <a href="#teach">Teaching</a>             
+                                <a href="#contact">Contact Information</a>             
                                 <!-- <a href="#talk">Talks</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-                                <!-- <a href="#code">Codes</a> -->
-                            </ul>
-                        </font>
-                    </div>
-                </div>
-
-
-                <!-- Spacer + horizontal rule -->
-                <div>
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                    <hr class="styled-hr" style="width:100%;">
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                </div>
-
-                <!-- Publications -->
-                <h2 id="pub" class="wsite-content-title" style="text-align:left;">
-                    <span style="font-weight:bold"><font size="5">Publications</font>:</span>
-                </h2>
-                <div class="paragraph" style="text-align:left;display:block;">
-
-                    <!-- ========== CONFERENCE PUBLICATIONS ========== -->
-                    <strong><font size="5">Conference Publications</font>:</strong><br><br>
-
-                                        <!-- 2027 -->
-                    <strong><font size="4">Quantum Property Testing for Bounded-Degree Directed Graphs.</font></strong><br><font size="4">Pan Peng, Jingyu Wu.<br>In the 38th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2027). <a href="https://arxiv.org/abs/2604.07954" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Low-Sensitivity Algorithms for the Maximum Cut Problem.</font></strong><br><font size="4">Weiqiang He, Pan Peng, Yuichi Yoshida.<br>In the 38th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2027).</font>
-                    <br><br>
-
-                    <strong><font size="4">Private Approximation of Graph Spectra and Cuts via Spectral Amplifiers.</font></strong><br><font size="4">Chenglin Fan, Jingcheng Liu, Pan Peng, Hangyu Xu, Zongrui Zou.<br>In the 38th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2027). <a href="https://arxiv.org/abs/2607.18846" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2026 -->
-                    <strong><font size="4">Learning-Augmented Streaming Algorithms for Approximating Boolean Max-CSPs.</font></strong><br><font size="4">Yinhao Dong, Pan Peng, Ali Vakilian, Santhoshini Velusamy, Xiaoyang Xu.<br>In the fortieth Conference on Neural Information Processing Systems (NeurIPS 2026).</font>
-                    <br><br>
-
-                    <strong><font size="4">Streaming Max-Cut in General Metrics.</font></strong><br><font size="4">Shaofeng H.-C. Jiang, Pan Peng, Haoze Wang.<br>In International Symposium on Algorithms and Computation (ISAAC 2026). <a href="https://arxiv.org/abs/2510.04435" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Sublinear Algorithms for Estimating Single-Linkage Clustering Costs.</font></strong><br><font size="4">Pan Peng, Christian Sohler, Yi Xu.<br>In European Symposium on Algorithms (ESA 2026). <a href="https://arxiv.org/abs/2510.11547" target="_blank">Arxiv Version</a>.</font>
-<br><br>
-
-                    <strong><font size="4">An Exponential Lower Bound for Spectral Density Estimation on Unweighted Graphs.</font></strong><br><font size="4">Pan Peng, Yuyang Wang, Qiping Yang and Yichun Yang.<br>In the Conference on Learning Theory (COLT 2026). <a href="https://arxiv.org/abs/2606.28188" target="_blank">Arxiv Version</a>.</font>
-<br><br>
-
-<strong><font size="4">Local Computation Algorithms for (Minimum) Spanning Trees on Expander Graphs.</font></strong><br><font size="4">Pan Peng, Yuyang Wang.<br>In the International Colloquium on Automata, Languages, and Programming (ICALP 2026). <a href="https://arxiv.org/abs/2602.07394" target="_blank">Arxiv Version</a>.</font>
-<br><br>
-
-<strong><font size="4">Quantum Algorithms for Triangle Cut Sparsification.</font></strong><br><font size="4">Shan Jiang, Pan Peng.<br>In the International Conference on Machine Learning (ICML 2026). <a href="https://arxiv.org/abs/2606.06287" target="_blank">Arxiv Version</a>.</font>
-<br><br>
-
-<strong><font size="4">Differentially Private Range Subgraph Counting.</font></strong><br><font size="4">Xian Chen, Ruobing Bai, Pan Peng.<br>In the International Conference on Machine Learning (ICML 2026). <a href="https://arxiv.org/abs/2606.08179" target="_blank">Arxiv Version</a>.</font>
-<br><br>
-
-<strong><font size="4">Sublinear-Time Algorithms for Diagonally Dominant Systems and Applications to the Friedkin-Johnsen Model.</font></strong><br><font size="4">Weiming Feng, Zelin Li, Pan Peng.<br>In International Computing and Combinatorics Conference (COCOON 2026). <a href="https://arxiv.org/abs/2509.13112" target="_blank">Arxiv Version</a>.</font>
-<br><br>
-                    
-                    <strong><font size="4">Near-Optimal Four-Cycle Counting in Graph Streams.</font></strong><br><font size="4">Sebastian Lüderssen, Stefan Neumann, Pan Peng.<br>In the 37th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2026). <a href="https://arxiv.org/abs/2604.00828" target="_blank">Arxiv Version</a>. <a href="https://doi.org/10.1137/1.9781611978971.158" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Sublinear Spectral Clustering Oracle with Little Memory.</font></strong><br><font size="4">Ranran Shen, Xiaoyi Zhu, Pan Peng, Zengfeng Huang.<br>In the fourteenth International Conference on Learning Representations (ICLR 2026). <a href="https://arxiv.org/abs/2604.14981" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Four-Cycle Counting in Low-Degeneracy Graph Streams.</font></strong><br><font size="4">Sebastian Lüderssen, Stefan Neumann, and Pan Peng.<br>In the 32nd ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD 2026). <a href="https://arxiv.org/abs/2606.17732" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2025 -->
-                    <strong><font size="4">Learning-Augmented Streaming Algorithms for Correlation Clustering.</font></strong><br><font size="4">Yinhao Dong, Shan Jiang, Shi Li, Pan Peng.<br>In the thirty-ninth Conference on Neural Information Processing Systems (NeurIPS 2025). <a href="http://arxiv.org/abs/2510.10705" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Testing Some First-Order Logic Properties on Sparse Graphs.</font></strong><br><font size="4">Pan Peng, Kefan Yu.<br>In International Computing and Combinatorics Conference (COCOON 2025). <a href="https://doi.org/10.1007/978-981-95-0218-9_8" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Differentially Private Synthetic Graphs Preserving Triangle-Motif Cuts.</font></strong><br><font size="4">Pan Peng, Hangyu Xu.<br>In the 38th Annual Conference on Learning Theory (COLT 2025). <a href="https://arxiv.org/abs/2507.14835" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Average Sensitivity of Hierarchical $k$-Median Clustering.</font></strong><br><font size="4">Shijie Li, Weiqiang He, Ruobing Bai, Pan Peng.<br>In the 42nd International Conference on Machine Learning (ICML 2025). <a href="https://arxiv.org/abs/2507.10296" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Learning-Augmented Streaming Algorithms for Approximating MAX-CUT.</font></strong><br><font size="4">Yinhao Dong, Pan Peng, Ali Vakilian.<br>In 16th Innovations in Theoretical Computer Science Conference (ITCS 2025). <a href="https://arxiv.org/abs/2412.09773" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2024 -->
-                    <strong><font size="4">A Differentially Private Clustering Algorithm for Well-Clustered Graphs.</font></strong><br><font size="4">Weiqiang He, Hendrik Fichtenberger, Pan Peng.<br>In the twelfth International Conference on Learning Representations (ICLR 2024). <a href="https://arxiv.org/abs/2403.14332" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Sublinear-Time Opinion Estimation in the Friedkin–Johnsen Model.</font></strong><br><font size="4">Stefan Neumann, Yinhao Dong, and Pan Peng. <br>In the 2024 ACM Web Conference (WebConf, formerly WWW 2024). <a href="https://arxiv.org/abs/2404.16464" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2023 -->
-                    <strong><font size="4">A Sublinear-Time Spectral Clustering Oracle with Improved Preprocessing Time.</font></strong><br><font size="4">Ranran Shen, Pan Peng.<br>In the thirty-seventh Conference on Neural Information Processing Systems (NeurIPS 2023). <a href="https://arxiv.org/abs/2310.17878" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Recovering Unbalanced Communities in the Stochastic Block Model with Application to Clustering with a Faulty Oracle.</font></strong><br><font size="4">Chandra Sekhar Mukherjee, Pan Peng, Jiapeng Zhang.<br>In the thirty-seventh Conference on Neural Information Processing Systems (NeurIPS 2023). <a href="https://arxiv.org/abs/2202.08522" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Sublinear-Time Algorithms for Max Cut, Max E2Lin$(q)$, and Unique Label Cover on Expanders.</font></strong><br><font size="4">Pan Peng, Yuichi Yoshida.<br>In the 34th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2023). <a href="https://arxiv.org/abs/2210.12601" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">An Optimal Separation Between Two Property Testing Models for Bounded Degree Directed Graphs.</font></strong><br><font size="4">Pan Peng, Yuyang Wang.<br>In the 50th International Colloquium on Automata, Languages, and Programming (ICALP 2023). <a href="https://arxiv.org/abs/2305.13089" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Massively Parallel Algorithms for the Stochastic Block Model.</font></strong><br><font size="4">Zelin Li, Pan Peng, Xianbin Zhu.<br>In the 31st Annual European Symposium on Algorithms (ESA 2023). <a href="https://arxiv.org/abs/2307.00530" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Effective Resistances in Non-Expander Graphs.</font></strong><br><font size="4">Dongrun Cai, Xue Chen, Pan Peng.<br>In the 31st Annual European Symposium on Algorithms (ESA 2023). <a href="https://arxiv.org/abs/2307.01218">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2022 -->
-                    <strong><font size="4">Sublinear-Time Clustering Oracle for Signed Graphs.</font></strong><br><font size="4">Stefan Neumann, Pan Peng.<br>In the 39th International Conference on Machine Learning (ICML 2022). <a href="https://arxiv.org/abs/2206.13813" target="_blank">Arxiv Version</a>. <br>(Accepted for long presentation.)</font>
-                    <br><br>
-
-                    <strong><font size="4">Approximately Counting Subgraphs in Data Streams.</font></strong><br><font size="4">Hendrik Fichtenberger, Pan Peng.<br>In the 41st ACM Symposium on Principles of Database Systems (PODS 2022). <a href="https://arxiv.org/abs/2203.14225" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2021 -->
-                    <strong><font size="4">Local Algorithms for Estimating Effective Resistance.</font></strong><br><font size="4">Pan Peng, Daniel Lopatta, Yuichi Yoshida, Gramoz Goranci.<br>In the 27th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD 2021). <a href="https://arxiv.org/abs/2106.03476" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Towards a Query-Optimal and Time-Efficient Algorithm for Clustering with a Faulty Oracle.</font></strong><br><font size="4">Pan Peng, Jiapeng Zhang.<br>In the 34th Annual Conference on Learning Theory (COLT 2021). <a href="https://arxiv.org/abs/2106.10374" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">GSF-Locality Is Not Sufficient for Proximity-Oblivious Testing.</font></strong><br><font size="4">Isolde Adler, Noleen Köhler, Pan Peng.<br>In the Computational Complexity Conference (CCC 2021). <a href="https://arxiv.org/abs/2105.08490" target="_blank">Arxiv Version</a>.<br> See the comments in <a href="http://www.wisdom.weizmann.ac.il/~oded/MC/304.html" target="_blank">Oded Goldreich's Choices #304</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">On Testability of First-Order Properties in Bounded-Degree Graphs.</font></strong><br><font size="4">Isolde Adler, Noleen Köhler, Pan Peng.<br>In the 32nd Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2021). <a href="https://arxiv.org/abs/2008.05800" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2020 -->
-                    <strong><font size="4">Augmenting the Algebraic Connectivity of Graphs.</font></strong><br><font size="4">Bogdan Manghiuc, Pan Peng, He Sun.<br>In Proceedings of the 28th European Symposium on Algorithms (ESA 2020). <a href="https://arxiv.org/abs/2006.14449" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Testable Properties in General Graphs and Random Order Streaming.</font></strong><br><font size="4">Artur Czumaj, Hendrik Fichtenberger, Pan Peng, Christian Sohler.<br>In the 24th International Conference on Randomization and Computation (RANDOM 2020). <a href="https://arxiv.org/abs/1905.01644" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Average Sensitivity of Spectral Clustering.</font></strong><br><font size="4">Pan Peng and Yuichi Yoshida.<br>In the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD 2020). <a href="https://arxiv.org/abs/2006.04094" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Sampling Arbitrary Subgraphs Exactly Uniformly in Sublinear Time.</font></strong><br><font size="4">Hendrik Fichtenberger, Mingze Gao and Pan Peng.<br>In the 47th International Colloquium on Automata, Languages and Programming (ICALP 2020). <a href="https://arxiv.org/abs/2005.01861" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">More Effective Randomized Search Heuristics for Graph Coloring Through Dynamic Optimization.</font></strong><br><font size="4">Jakob Bossek, Frank Neumann, Pan Peng and Dirk Sudholt.<br>In the Genetic and Evolutionary Computation Conference (GECCO 2020). <a href="https://arxiv.org/abs/2005.13825" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Constant-Time Dynamic $(\Delta+1)$-Coloring.</font></strong><br><font size="4">Monika Henzinger, Pan Peng.<br>In the 37th International Symposium on Theoretical Aspects of Computer Science (STACS 2020). Part I of <a href="https://arxiv.org/abs/1907.04745" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Robust Clustering Oracle and Local Reconstructor of Cluster Structure of Graphs.</font></strong><br><font size="4">Pan Peng.<br>In the 31st Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2020). <a href="https://arxiv.org/abs/1904.09710" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2019 -->
-                    <strong><font size="4">Runtime Analysis of Randomized Search Heuristics for Dynamic Graph Coloring.</font></strong><br><font size="4">Jakob Bossek, Frank Neumann, Pan Peng and Dirk Sudholt.<br>In the Genetic and Evolutionary Computation Conference (GECCO 2019). <a href="https://doi.org/10.1145/3321707.3321792" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Every Testable (Infinite) Property of Bounded-Degree Graphs Contains an Infinite Hyperfinite Subproperty.</font></strong><br><font size="4">Hendrik Fichtenberger, Pan Peng and Christian Sohler.<br>In the 30th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2019). <a href="https://arxiv.org/abs/1811.02937" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2018 -->
-                    <strong><font size="4">Dynamic Effective Resistances and Approximate Schur Complement on Separable Graphs.</font></strong><br><font size="4">Gramoz Goranci, Monika Henzinger, Pan Peng.<br>In Proceedings of the 26th European Symposium on Algorithms (ESA 2018). <a href="https://arxiv.org/abs/1802.09111" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Estimating Graph Parameters from Random Order Streams.</font></strong><br><font size="4">Pan Peng, Christian Sohler.<br>In the 29th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2018). <a href="https://arxiv.org/abs/1711.04881" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <!-- 2017 -->
-                    <font size="4"><strong>The Power of Vertex Sparsifiers in Dynamic Graph Algorithms.</strong><br><span style="color:rgb(119, 119, 119)">Gramoz Goranci, Monika Henzinger, Pan Peng.</span><br><span style="color:rgb(119, 119, 119)">In the 25th Annual European Symposium on Algorithms (ESA 2017)</span><span style="color:rgb(119, 119, 119)">. <a href="https://arxiv.org/abs/1712.06473"  target="_blank">Arxiv version</a>.</span></font>
-                    <br><br>
-
-                    <strong><font size="4">Improved Guarantees for Vertex Sparsification in Planar Graphs.</font></strong><br><font size="4">Gramoz Goranci, Monika Henzinger, Pan Peng.<br>In the 25th Annual European Symposium on Algorithms (ESA 2017). <a href="https://arxiv.org/abs/1702.01136" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Testable Bounded Degree Graph Properties Are Random Order Streamable.</font></strong><br><font size="4">Morteza Monemizadeh, S. Muthukrishnan, Pan Peng and Christian Sohler.&nbsp;<br>In&nbsp;the 44th International Colloquium on Automata, Languages, and Programming (ICALP 2017). <a href="https://arxiv.org/abs/1707.07334" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <!-- 2016 -->
-                    <strong><font size="4">Dynamic Graph Stream Algorithms in o(n) Space.</font></strong><br><font size="4">Zengfeng Huang, Pan Peng.<br>In the 43rd International Colloquium on Automata, Languages, and Programming (ICALP 2016). <a href="http://arxiv.org/abs/1605.00089" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Relating Two Property Testing Models for Bounded Degree Directed Graphs.</font></strong><br><font size="4">Artur Czumaj, Pan Peng, Christian Sohler.<br>In 48th ACM Symposium on Theory of Computing (STOC 2016). <a href="https://doi.org/10.1145/2897518.2897575" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <!-- 2015 -->
-                    <strong><font size="4"><span>On Constant Size Graphs That Preserve the Local Structure of High Girth Graphs.</span></font></strong><br><font size="4">Hendrik Fichtenberger, Pan Peng and Christian Sohler.<br>In the&nbsp;19th International Workshop on Randomization and Computation (RANDOM'2015). <a href="http://dx.doi.org/10.4230/LIPIcs.APPROX-RANDOM.2015.786"  target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <font size="4"><strong>Testing Cluster Structure of Graphs.</strong><br>Artur Czumaj, Pan Peng, Christian Sohler.<br>In 47th ACM Symposium on Theory of Computing (STOC 2015). <a href="http://arxiv.org/abs/1504.03294" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <font size="4"><strong>Testing Small Set Expansion in General Graphs.</strong><br>Angsheng Li, Pan Peng.<br>In 32nd Symposium on Theoretical Aspects of Computer Science (STACS 2015). <a href="http://arxiv.org/abs/1209.5052" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <!-- 2013 -->
-                    <strong><font size="4">Detecting and Characterizing Small Dense Bipartite-Like Subgraphs by the Bipartiteness Ratio Measure.</font></strong><br><font size="4">Angsheng Li, Pan Peng.&nbsp;&nbsp;<br>In&nbsp;24th&nbsp;International Symposium on Algorithms and Computation (ISAAC 2013).&nbsp;<a href="http://arxiv.org/abs/1209.5045" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <!-- 2012 -->
-                    <strong><font size="4">A Local Algorithm for Finding Dense Bipartite-Like Subgraphs. </font></strong><br><font size="4">Pan Peng.<br>In 18th Annual International Computing and Combinatorics Conference (COCOON 2012). <a href="https://doi.org/10.1007/978-3-642-32241-9_13" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">The Small Community Phenomenon in Networks: Models, Algorithms and Applications. </font></strong><br><font size="4">Pan Peng.<br>In 9th Annual Conference on Theory and Applications of Models of Computation (TAMC 2012). <a href="https://doi.org/10.1007/978-3-642-29952-0_10" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <!-- ========== JOURNAL PUBLICATIONS ========== -->
-                    <strong><font size="5">Journal Publications</font>:</strong><br><br>
-
-                    <!-- 2026 -->
-                    <strong><font size="4">Testing Cluster Structure of Graphs.</font></strong><br><font size="4">Artur Czumaj, Pan Peng, Christian Sohler.<br>ACM Trans. Algorithms (TALG), 2026.</font>
-<br><br>
-
-                    <strong><font size="4">Streaming algorithms for triangle counting: adversarial robustness and the weighted case.</font></strong><br><font size="4">Jing Cao, Yicheng Pan, Pan Peng.<br>Frontiers Comput. Sci. 20(1): 2001401 (2026).</font>
-                    <br><br>
-
-                    <!-- 2024 -->
-                    <strong><font size="4">On Testability of First-Order Properties in Bounded-Degree Graphs and Connections to Proximity-Oblivious Testing.</font></strong><br><font size="4">Isolde Adler, Noleen Köhler, Pan Peng.<br>SIAM J. Comput. 53(4): 825-883 (2024). <a href="https://doi.org/10.1137/23M1556253" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <!-- 2022 -->
-                    <strong><font size="4">Constant-time Dynamic (Δ +1)-Coloring.</font></strong><br><font size="4">Monika Henzinger, Pan Peng.<br>ACM Trans. Algorithms 18(2): 16:1-16:21 (2022). <a href="https://arxiv.org/abs/1907.04745" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2021 -->
-                    <strong><font size="4">Time Complexity Analysis of Randomized Search Heuristics for the Dynamic Graph Coloring Problem.</font></strong><br><font size="4">Jakob Bossek, Frank Neumann, Pan Peng, Dirk Sudholt.<br>Algorithmica 83(10): 3148-3179 (2021). <a href="https://doi.org/10.1145/3321707.3321792" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Constant-time dynamic weight approximation for minimum spanning forest.</font></strong><br><font size="4">Monika Henzinger, Pan Peng.<br>Inf. Comput. 281: 104805 (2021). <a href="https://arxiv.org/abs/2011.00977" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Mixed-order spectral clustering for complex networks.</font></strong><br><font size="4">Yan Ge, Pan Peng, Haiping Lu.<br>Pattern Recognit. 117: 107964 (2021). <a href="https://doi.org/10.1016/j.patcog.2021.107964" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <!-- 2020 -->
-                    <strong><font size="4">Improved Guarantees for Vertex Sparsification in Planar Graphs.</font></strong><br><font size="4">Gramoz Goranci, Monika Henzinger, Pan Peng.<br>SIAM J. Discret. Math. 34(1): 130-162 (2020). <a href="https://arxiv.org/abs/1702.01136" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2019 -->
-                    <strong><font size="4">Dynamic Graph Stream Algorithms in o(n) Space.</font></strong><br><font size="4">Zengfeng Huang, Pan Peng.<br>Algorithmica 81(5): 1965-1987 (2019). <a href="http://arxiv.org/abs/1605.00089" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <strong><font size="4">Spectral concentration and greedy k-clustering.</font></strong><br><font size="4">Tamal K. Dey, Pan Peng, Alfred Rossi, Anastasios Sidiropoulos.<br>Comput. Geom. 76: 19-32 (2019). <a href="http://arxiv.org/abs/1404.1008" target="_blank">Arxiv Version</a>.</font>
-                    <br><br>
-
-                    <!-- 2014 -->
-                    <strong><font size="4">Global core, and galaxy structure of networks.</font></strong><br><font size="4">Wei Zhang, Yicheng Pan, Pan Peng, Jiankou Li, Xuechen Li, Angsheng Li.<br>Sci. China Inf. Sci. 57(7): 1-20 (2014). <a href="https://doi.org/10.1007/s11432-013-4930-6" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <!-- 新增 Equilibrium Games in Networks (2014) -->
-                    <strong><font size="4">Equilibrium Games in Networks.</font></strong><br><font size="4">Angsheng Li, Xiaohui Zhang, Yicheng Pan, Pan Peng.<br>Physica A: Statistical Mechanics and its Applications, Volume 416, Pages 49-60, 2014. <a href="https://doi.org/10.1016/j.physa.2014.08.028" target="_blank">DOI</a>.</font>
-                    <br><br>
-
-                    <!-- 2012 -->
-                    <strong><font size="4">The small-community phenomenon in networks.</font></strong><br><font size="4">Angsheng Li, Pan Peng.<br>Math. Struct. Comput. Sci. 22(3): 373-407 (2012). <a href="http://arxiv.org/abs/1107.5786" target="_blank">Arxiv version</a>.</font>
-                    <br><br>
-
-                    <!-- 2011 -->
-                    <strong><font size="4">Community Structures in Classical Network Models.</font></strong><br><font size="4">Angsheng Li, Pan Peng.<br>Internet Math. 7(2): 81-106 (2011). <a href="https://doi.org/10.1080/15427951.2011.566458" target="_blank">DOI</a>.</font>
-                </div>
-
-                <!-- Spacer + horizontal rule -->
-                <div>
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                    <hr class="styled-hr" style="width:100%;">
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                </div>
-
-                <!-- Teaching -->
-                <h2 id="teach" class="wsite-content-title" style="text-align:left;">
-                    <span style="font-weight:bold"><font size="5">Teaching</font>:</span>
-                </h2>
-                <div class="paragraph" style="text-align:left;display:block;">
-                    <strong><font size="4">Graph Theory (Honor Class).</font></strong><font size="4"> 2025 Fall.</font>
-                    <br><br>
-                    <strong><font size="4">Algorithms for Big Data.</font></strong><font size="4"> 2022, 2023, 2025 Spring.</font>
-                    <br><br>
-                    <strong><font size="4">Design and Analysis of Algorithms.</font></strong><font size="4"> 2022, 2023, 2024 Fall.</font>
-                    <br><br>
-                    <strong><font size="4">Advanced Algorithms.</font></strong><font size="4"> 2018-2019, 2019-2020, 2020-2021.</font>
-                    <br><br>
-                    <strong><font size="4">Automata, Computation and Complexity.</font></strong><font size="4"> 2018-2019, 2019-2020, 2020-2021.</font>
-                </div>
-
-                <!-- Spacer + horizontal rule -->
-                <div>
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                    <hr class="styled-hr" style="width:100%;">
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                </div>
-
-                <!-- Program Committees -->
-                <h2 id="committees" class="wsite-content-title" style="text-align:left;">
-                    <span style="font-weight:bold"><font size="5">Program Committees</font>:</span>
-                </h2>
-                <div class="paragraph" style="text-align:left;display:block;">
-                    <font size="4">
-                        <!-- 添加 SODA 2027 链接 -->
-                        <a href="https://www.siam.org/conferences-events/siam-conferences/soda27/" target="_blank">SODA 2027</a>,
+<!-- <a href="#code">Codes</a> -->
+</ul>
+</font>
+</div>
+</div>
+<!-- Spacer + horizontal rule -->
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"/>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+<!-- Publications -->
+<h2 class="wsite-content-title" id="pub" style="text-align:left;">
+<span style="font-weight:bold"><font size="5">Publications</font>:</span>
+</h2>
+<div class="paragraph" style="text-align:left;display:block;"><div class="pub-view-controls"><button class="pub-view-btn active" data-pub-view="chronological" onclick="setPublicationView('chronological')" type="button">Chronological</button><button class="pub-view-btn" data-pub-view="topic" onclick="setPublicationView('topic')" type="button">By Topic</button></div><div id="pub-chronological"><strong><font size="5">Conference Publications</font>:</strong><br/><br/><div class="pub-entry" data-pub-type="conference" data-title="Quantum Property Testing for Bounded-Degree Directed Graphs." data-topics="Sublinear Algorithms &amp; Property Testing|Quantum Algorithms"><strong><font size="4">Quantum Property Testing for Bounded-Degree Directed Graphs.</font></strong><br/><font size="4">Pan Peng, Jingyu Wu.<br/>In the 38th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2027). <a href="https://arxiv.org/abs/2604.07954" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Quantum Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Low-Sensitivity Algorithms for the Maximum Cut Problem." data-topics="Privacy, Robustness &amp; Sensitivity"><strong><font size="4">Low-Sensitivity Algorithms for the Maximum Cut Problem.</font></strong><br/><font size="4">Weiqiang He, Pan Peng, Yuichi Yoshida.<br/>In the 38th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2027).</font><div class="pub-tags"><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Private Approximation of Graph Spectra and Cuts via Spectral Amplifiers." data-topics="Privacy, Robustness &amp; Sensitivity|Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">Private Approximation of Graph Spectra and Cuts via Spectral Amplifiers.</font></strong><br/><font size="4">Chenglin Fan, Jingcheng Liu, Pan Peng, Hangyu Xu, Zongrui Zou.<br/>In the 38th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2027). <a href="https://arxiv.org/abs/2607.18846" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Learning-Augmented Streaming Algorithms for Approximating Boolean Max-CSPs." data-topics="Streaming &amp; Massive-Data Algorithms|Learning-Augmented Algorithms"><strong><font size="4">Learning-Augmented Streaming Algorithms for Approximating Boolean Max-CSPs.</font></strong><br/><font size="4">Yinhao Dong, Pan Peng, Ali Vakilian, Santhoshini Velusamy, Xiaoyang Xu.<br/>In the fortieth Conference on Neural Information Processing Systems (NeurIPS 2026).</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span><span class="pub-tag">Learning-Augmented Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Streaming Max-Cut in General Metrics." data-topics="Streaming &amp; Massive-Data Algorithms"><strong><font size="4">Streaming Max-Cut in General Metrics.</font></strong><br/><font size="4">Shaofeng H.-C. Jiang, Pan Peng, Haoze Wang.<br/>In the 37th International Symposium on Algorithms and Computation (ISAAC 2026). <a href="https://arxiv.org/abs/2510.04435" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Sublinear-Time Algorithms for Diagonally Dominant Systems and Applications to the Friedkin-Johnsen Model." data-topics="Sublinear Algorithms &amp; Property Testing|Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">Sublinear-Time Algorithms for Diagonally Dominant Systems and Applications to the Friedkin-Johnsen Model.</font></strong><br/><font size="4">Weiming Feng, Zelin Li, Pan Peng.<br/>In International Computing and Combinatorics Conference (COCOON 2026). <a href="https://arxiv.org/abs/2509.13112" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Sublinear Algorithms for Estimating Single-Linkage Clustering Costs." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Sublinear Algorithms for Estimating Single-Linkage Clustering Costs.</font></strong><br/><font size="4">Pan Peng, Christian Sohler, Yi Xu.<br/>In European Symposium on Algorithms (ESA 2026). <a href="https://arxiv.org/abs/2510.11547" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Four-Cycle Counting in Low-Degeneracy Graph Streams." data-topics="Streaming &amp; Massive-Data Algorithms"><strong><font size="4">Four-Cycle Counting in Low-Degeneracy Graph Streams.</font></strong><br/><font size="4">Sebastian Lüderssen, Stefan Neumann, and Pan Peng.<br/>In the 32nd ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining (KDD 2026). <a href="https://arxiv.org/abs/2606.17732" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Quantum Algorithms for Triangle Cut Sparsification." data-topics="Spectral Graph Algorithms &amp; Sparsification|Quantum Algorithms"><strong><font size="4">Quantum Algorithms for Triangle Cut Sparsification.</font></strong><br/><font size="4">Shan Jiang, Pan Peng.<br/>In the International Conference on Machine Learning (ICML 2026). <a href="https://arxiv.org/abs/2606.06287" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span><span class="pub-tag">Quantum Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Differentially Private Range Subgraph Counting." data-topics="Privacy, Robustness &amp; Sensitivity"><strong><font size="4">Differentially Private Range Subgraph Counting.</font></strong><br/><font size="4">Xian Chen, Ruobing Bai, Pan Peng.<br/>In the International Conference on Machine Learning (ICML 2026). <a href="https://arxiv.org/abs/2606.08179" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Local Computation Algorithms for (Minimum) Spanning Trees on Expander Graphs." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">Local Computation Algorithms for (Minimum) Spanning Trees on Expander Graphs.</font></strong><br/><font size="4">Pan Peng, Yuyang Wang.<br/>In the International Colloquium on Automata, Languages, and Programming (ICALP 2026). <a href="https://arxiv.org/abs/2602.07394" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="An Exponential Lower Bound for Spectral Density Estimation on Unweighted Graphs." data-topics="Sublinear Algorithms &amp; Property Testing|Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">An Exponential Lower Bound for Spectral Density Estimation on Unweighted Graphs.</font></strong><br/><font size="4">Pan Peng, Yuyang Wang, Qiping Yang and Yichun Yang.<br/>In the Conference on Learning Theory (COLT 2026). <a href="https://arxiv.org/abs/2606.28188" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Sublinear Spectral Clustering Oracle with Little Memory." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Sublinear Spectral Clustering Oracle with Little Memory.</font></strong><br/><font size="4">Ranran Shen, Xiaoyi Zhu, Pan Peng, Zengfeng Huang.<br/>In the fourteenth International Conference on Learning Representations (ICLR 2026). <a href="https://openreview.net/pdf?id=0GpolO2auw" target="_blank">Link</a>. <a href="https://arxiv.org/abs/2604.14981" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Near-Optimal Four-Cycle Counting in Graph Streams." data-topics="Streaming &amp; Massive-Data Algorithms"><strong><font size="4">Near-Optimal Four-Cycle Counting in Graph Streams.</font></strong><br/><font size="4">Sebastian Lüderssen, Stefan Neumann, Pan Peng.<br/>In the 37th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2026). <a href="https://doi.org/10.1137/1.9781611978971.158" target="_blank">DOI</a>. <a href="https://arxiv.org/abs/2604.00828" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Learning-Augmented Streaming Algorithms for Correlation Clustering." data-topics="Streaming &amp; Massive-Data Algorithms|Learning-Augmented Algorithms"><strong><font size="4">Learning-Augmented Streaming Algorithms for Correlation Clustering.</font></strong><br/><font size="4">Yinhao Dong, Shan Jiang, Shi Li, Pan Peng.<br/>In the thirty-ninth Conference on Neural Information Processing Systems (NeurIPS 2025). <a href="https://arxiv.org/abs/2510.10705" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span><span class="pub-tag">Learning-Augmented Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Testing Some First-Order Logic Properties on Sparse Graphs." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">Testing Some First-Order Logic Properties on Sparse Graphs.</font></strong><br/><font size="4">Pan Peng, Kefan Yu.<br/>In International Computing and Combinatorics Conference (COCOON 2025). <a href="https://doi.org/10.1007/978-981-95-0218-9_8" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Differentially Private Synthetic Graphs Preserving Triangle-Motif Cuts." data-topics="Privacy, Robustness &amp; Sensitivity"><strong><font size="4">Differentially Private Synthetic Graphs Preserving Triangle-Motif Cuts.</font></strong><br/><font size="4">Pan Peng, Hangyu Xu.<br/>In the 38th Annual Conference on Learning Theory (COLT 2025). <a href="https://arxiv.org/abs/2507.14835" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Average Sensitivity of Hierarchical $k$-Median Clustering." data-topics="Privacy, Robustness &amp; Sensitivity|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Average Sensitivity of Hierarchical $k$-Median Clustering.</font></strong><br/><font size="4">Shijie Li, Weiqiang He, Ruobing Bai, Pan Peng.<br/>In the 42nd International Conference on Machine Learning (ICML 2025). <a href="https://arxiv.org/abs/2507.10296" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Learning-Augmented Streaming Algorithms for Approximating MAX-CUT." data-topics="Streaming &amp; Massive-Data Algorithms|Learning-Augmented Algorithms"><strong><font size="4">Learning-Augmented Streaming Algorithms for Approximating MAX-CUT.</font></strong><br/><font size="4">Yinhao Dong, Pan Peng, Ali Vakilian.<br/>In 16th Innovations in Theoretical Computer Science Conference (ITCS 2025). <a href="https://arxiv.org/abs/2412.09773" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span><span class="pub-tag">Learning-Augmented Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="A Differentially Private Clustering Algorithm for Well-Clustered Graphs." data-topics="Privacy, Robustness &amp; Sensitivity|Clustering, Community Detection &amp; Network Science"><strong><font size="4">A Differentially Private Clustering Algorithm for Well-Clustered Graphs.</font></strong><br/><font size="4">Weiqiang He, Hendrik Fichtenberger, Pan Peng.<br/>In the twelfth International Conference on Learning Representations (ICLR 2024). <a href="https://arxiv.org/abs/2403.14332" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Sublinear-Time Opinion Estimation in the Friedkin–Johnsen Model." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Sublinear-Time Opinion Estimation in the Friedkin–Johnsen Model.</font></strong><br/><font size="4">Stefan Neumann, Yinhao Dong, and Pan Peng. <br/>In the 2024 ACM Web Conference (WebConf, formerly WWW 2024). <a href="https://arxiv.org/abs/2404.16464" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="A Sublinear-Time Spectral Clustering Oracle with Improved Preprocessing Time." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">A Sublinear-Time Spectral Clustering Oracle with Improved Preprocessing Time.</font></strong><br/><font size="4">Ranran Shen, Pan Peng.<br/>In the thirty-seventh Conference on Neural Information Processing Systems (NeurIPS 2023). <a href="https://arxiv.org/abs/2310.17878" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Recovering Unbalanced Communities in the Stochastic Block Model with Application to Clustering with a Faulty Oracle." data-topics="Clustering, Community Detection &amp; Network Science"><strong><font size="4">Recovering Unbalanced Communities in the Stochastic Block Model with Application to Clustering with a Faulty Oracle.</font></strong><br/><font size="4">Chandra Sekhar Mukherjee, Pan Peng, Jiapeng Zhang.<br/>In the thirty-seventh Conference on Neural Information Processing Systems (NeurIPS 2023). <a href="https://arxiv.org/abs/2202.08522" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Sublinear-Time Algorithms for Max Cut, Max E2Lin$(q)$, and Unique Label Cover on Expanders." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">Sublinear-Time Algorithms for Max Cut, Max E2Lin$(q)$, and Unique Label Cover on Expanders.</font></strong><br/><font size="4">Pan Peng, Yuichi Yoshida.<br/>In the 34th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2023). <a href="https://arxiv.org/abs/2210.12601" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="An Optimal Separation Between Two Property Testing Models for Bounded Degree Directed Graphs." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">An Optimal Separation Between Two Property Testing Models for Bounded Degree Directed Graphs.</font></strong><br/><font size="4">Pan Peng, Yuyang Wang.<br/>In the 50th International Colloquium on Automata, Languages, and Programming (ICALP 2023). <a href="https://arxiv.org/abs/2305.13089" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Massively Parallel Algorithms for the Stochastic Block Model." data-topics="Streaming &amp; Massive-Data Algorithms|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Massively Parallel Algorithms for the Stochastic Block Model.</font></strong><br/><font size="4">Zelin Li, Pan Peng, Xianbin Zhu.<br/>In the 31st Annual European Symposium on Algorithms (ESA 2023). <a href="https://arxiv.org/abs/2307.00530" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Effective Resistances in Non-Expander Graphs." data-topics="Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">Effective Resistances in Non-Expander Graphs.</font></strong><br/><font size="4">Dongrun Cai, Xue Chen, Pan Peng.<br/>In the 31st Annual European Symposium on Algorithms (ESA 2023). <a href="https://arxiv.org/abs/2307.01218">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Sublinear-Time Clustering Oracle for Signed Graphs." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Sublinear-Time Clustering Oracle for Signed Graphs.</font></strong><br/><font size="4">Stefan Neumann, Pan Peng.<br/>In the 39th International Conference on Machine Learning (ICML 2022). <a href="https://arxiv.org/abs/2206.13813" target="_blank">Arxiv Version</a>. <br/>(Accepted for long presentation.)</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Approximately Counting Subgraphs in Data Streams." data-topics="Streaming &amp; Massive-Data Algorithms"><strong><font size="4">Approximately Counting Subgraphs in Data Streams.</font></strong><br/><font size="4">Hendrik Fichtenberger, Pan Peng.<br/>In the 41st ACM Symposium on Principles of Database Systems (PODS 2022). <a href="https://arxiv.org/abs/2203.14225" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Local Algorithms for Estimating Effective Resistance." data-topics="Sublinear Algorithms &amp; Property Testing|Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">Local Algorithms for Estimating Effective Resistance.</font></strong><br/><font size="4">Pan Peng, Daniel Lopatta, Yuichi Yoshida, Gramoz Goranci.<br/>In the 27th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining (KDD 2021). <a href="https://arxiv.org/abs/2106.03476" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Towards a Query-Optimal and Time-Efficient Algorithm for Clustering with a Faulty Oracle." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Towards a Query-Optimal and Time-Efficient Algorithm for Clustering with a Faulty Oracle.</font></strong><br/><font size="4">Pan Peng, Jiapeng Zhang.<br/>In the 34th Annual Conference on Learning Theory (COLT 2021). <a href="https://arxiv.org/abs/2106.10374" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="GSF-Locality Is Not Sufficient for Proximity-Oblivious Testing." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">GSF-Locality Is Not Sufficient for Proximity-Oblivious Testing.</font></strong><br/><font size="4">Isolde Adler, Noleen Köhler, Pan Peng.<br/>In the Computational Complexity Conference (CCC 2021). <a href="https://arxiv.org/abs/2105.08490" target="_blank">Arxiv Version</a>.<br/> See the comments in <a href="http://www.wisdom.weizmann.ac.il/~oded/MC/304.html" target="_blank">Oded Goldreich's Choices #304</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="On Testability of First-Order Properties in Bounded-Degree Graphs." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">On Testability of First-Order Properties in Bounded-Degree Graphs.</font></strong><br/><font size="4">Isolde Adler, Noleen Köhler, Pan Peng.<br/>In the 32nd Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2021). <a href="https://arxiv.org/abs/2304.03810" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Augmenting the Algebraic Connectivity of Graphs." data-topics="Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">Augmenting the Algebraic Connectivity of Graphs.</font></strong><br/><font size="4">Bogdan Manghiuc, Pan Peng, He Sun.<br/>In Proceedings of the 28th European Symposium on Algorithms (ESA 2020). <a href="https://arxiv.org/abs/2006.14449" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Testable Properties in General Graphs and Random Order Streaming." data-topics="Sublinear Algorithms &amp; Property Testing|Streaming &amp; Massive-Data Algorithms"><strong><font size="4">Testable Properties in General Graphs and Random Order Streaming.</font></strong><br/><font size="4">Artur Czumaj, Hendrik Fichtenberger, Pan Peng, Christian Sohler.<br/>In the 24th International Conference on Randomization and Computation (RANDOM 2020). <a href="https://arxiv.org/abs/1905.01644" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Average Sensitivity of Spectral Clustering." data-topics="Privacy, Robustness &amp; Sensitivity|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Average Sensitivity of Spectral Clustering.</font></strong><br/><font size="4">Pan Peng and Yuichi Yoshida.<br/>In the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining (KDD 2020). <a href="https://arxiv.org/abs/2006.04094" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Sampling Arbitrary Subgraphs Exactly Uniformly in Sublinear Time." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">Sampling Arbitrary Subgraphs Exactly Uniformly in Sublinear Time.</font></strong><br/><font size="4">Hendrik Fichtenberger, Mingze Gao and Pan Peng.<br/>In the 47th International Colloquium on Automata, Languages and Programming (ICALP 2020). <a href="https://arxiv.org/abs/2005.01861" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="More Effective Randomized Search Heuristics for Graph Coloring Through Dynamic Optimization." data-topics="Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">More Effective Randomized Search Heuristics for Graph Coloring Through Dynamic Optimization.</font></strong><br/><font size="4">Jakob Bossek, Frank Neumann, Pan Peng and Dirk Sudholt.<br/>In the Genetic and Evolutionary Computation Conference (GECCO 2020). <a href="https://arxiv.org/abs/2005.13825" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Constant-Time Dynamic $(\Delta+1)$-Coloring." data-topics="Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Constant-Time Dynamic $(\Delta+1)$-Coloring.</font></strong><br/><font size="4">Monika Henzinger, Pan Peng.<br/>In the 37th International Symposium on Theoretical Aspects of Computer Science (STACS 2020). Part I of <a href="https://arxiv.org/abs/1907.04745" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Robust Clustering Oracle and Local Reconstructor of Cluster Structure of Graphs." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Robust Clustering Oracle and Local Reconstructor of Cluster Structure of Graphs.</font></strong><br/><font size="4">Pan Peng.<br/>In the 31st Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2020). <a href="https://arxiv.org/abs/1904.09710" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Runtime Analysis of Randomized Search Heuristics for Dynamic Graph Coloring." data-topics="Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Runtime Analysis of Randomized Search Heuristics for Dynamic Graph Coloring.</font></strong><br/><font size="4">Jakob Bossek, Frank Neumann, Pan Peng and Dirk Sudholt.<br/>In the Genetic and Evolutionary Computation Conference (GECCO 2019). <a href="https://doi.org/10.1145/3321707.3321792" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Every Testable (Infinite) Property of Bounded-Degree Graphs Contains an Infinite Hyperfinite Subproperty." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">Every Testable (Infinite) Property of Bounded-Degree Graphs Contains an Infinite Hyperfinite Subproperty.</font></strong><br/><font size="4">Hendrik Fichtenberger, Pan Peng and Christian Sohler.<br/>In the 30th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2019). <a href="https://arxiv.org/abs/1811.02937" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Dynamic Effective Resistances and Approximate Schur Complement on Separable Graphs." data-topics="Spectral Graph Algorithms &amp; Sparsification|Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Dynamic Effective Resistances and Approximate Schur Complement on Separable Graphs.</font></strong><br/><font size="4">Gramoz Goranci, Monika Henzinger, Pan Peng.<br/>In Proceedings of the 26th European Symposium on Algorithms (ESA 2018). <a href="https://arxiv.org/abs/1802.09111" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Estimating Graph Parameters from Random Order Streams." data-topics="Sublinear Algorithms &amp; Property Testing|Streaming &amp; Massive-Data Algorithms"><strong><font size="4">Estimating Graph Parameters from Random Order Streams.</font></strong><br/><font size="4">Pan Peng, Christian Sohler.<br/>In the 29th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2018). <a href="https://arxiv.org/abs/1711.04881" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="The Power of Vertex Sparsifiers in Dynamic Graph Algorithms." data-topics="Spectral Graph Algorithms &amp; Sparsification|Dynamic Graph Algorithms &amp; Evolutionary Computation"><font size="4"><strong>The Power of Vertex Sparsifiers in Dynamic Graph Algorithms.</strong><br/><span style="color:rgb(119, 119, 119)">Gramoz Goranci, Monika Henzinger, Pan Peng.</span><br/><span style="color:rgb(119, 119, 119)">In the 25th Annual European Symposium on Algorithms (ESA 2017)</span><span style="color:rgb(119, 119, 119)">. <a href="https://arxiv.org/abs/1712.06473" target="_blank">Arxiv Version</a>.</span></font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Improved Guarantees for Vertex Sparsification in Planar Graphs." data-topics="Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">Improved Guarantees for Vertex Sparsification in Planar Graphs.</font></strong><br/><font size="4">Gramoz Goranci, Monika Henzinger, Pan Peng.<br/>In the 25th Annual European Symposium on Algorithms (ESA 2017). <a href="https://arxiv.org/abs/1702.01136" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Testable Bounded Degree Graph Properties Are Random Order Streamable." data-topics="Sublinear Algorithms &amp; Property Testing|Streaming &amp; Massive-Data Algorithms"><strong><font size="4">Testable Bounded Degree Graph Properties Are Random Order Streamable.</font></strong><br/><font size="4">Morteza Monemizadeh, S. Muthukrishnan, Pan Peng and Christian Sohler. <br/>In the 44th International Colloquium on Automata, Languages, and Programming (ICALP 2017). <a href="https://arxiv.org/abs/1707.07334" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Dynamic Graph Stream Algorithms in o(n) Space." data-topics="Streaming &amp; Massive-Data Algorithms|Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Dynamic Graph Stream Algorithms in o(n) Space.</font></strong><br/><font size="4">Zengfeng Huang, Pan Peng.<br/>In the 43rd International Colloquium on Automata, Languages, and Programming (ICALP 2016). <a href="https://arxiv.org/abs/1605.00089" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Relating Two Property Testing Models for Bounded Degree Directed Graphs." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">Relating Two Property Testing Models for Bounded Degree Directed Graphs.</font></strong><br/><font size="4">Artur Czumaj, Pan Peng, Christian Sohler.<br/>In 48th ACM Symposium on Theory of Computing (STOC 2016). <a href="https://doi.org/10.1145/2897518.2897575" target="_blank">DOI</a>. <a href="https://arxiv.org/abs/1504.00695" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="On Constant Size Graphs That Preserve the Local Structure of High Girth Graphs." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4"><span>On Constant Size Graphs That Preserve the Local Structure of High Girth Graphs.</span></font></strong><br/><font size="4">Hendrik Fichtenberger, Pan Peng and Christian Sohler.<br/>In the 19th International Workshop on Randomization and Computation (RANDOM'2015). <a href="https://dx.doi.org/10.4230/LIPIcs.APPROX-RANDOM.2015.786" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Testing Cluster Structure of Graphs." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><font size="4"><strong>Testing Cluster Structure of Graphs.</strong><br/>Artur Czumaj, Pan Peng, Christian Sohler.<br/>In 47th ACM Symposium on Theory of Computing (STOC 2015). <a href="https://arxiv.org/abs/1504.03294" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Testing Small Set Expansion in General Graphs." data-topics="Sublinear Algorithms &amp; Property Testing"><font size="4"><strong>Testing Small Set Expansion in General Graphs.</strong><br/>Angsheng Li, Pan Peng.<br/>In 32nd Symposium on Theoretical Aspects of Computer Science (STACS 2015). <a href="https://arxiv.org/abs/1209.5052" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="Detecting and Characterizing Small Dense Bipartite-Like Subgraphs by the Bipartiteness Ratio Measure." data-topics="Clustering, Community Detection &amp; Network Science"><strong><font size="4">Detecting and Characterizing Small Dense Bipartite-Like Subgraphs by the Bipartiteness Ratio Measure.</font></strong><br/><font size="4">Angsheng Li, Pan Peng.  <br/>In 24th International Symposium on Algorithms and Computation (ISAAC 2013). <a href="https://arxiv.org/abs/1209.5045" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="A Local Algorithm for Finding Dense Bipartite-Like Subgraphs." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">A Local Algorithm for Finding Dense Bipartite-Like Subgraphs. </font></strong><br/><font size="4">Pan Peng.<br/>In 18th Annual International Computing and Combinatorics Conference (COCOON 2012). <a href="https://doi.org/10.1007/978-3-642-32241-9_13" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="conference" data-title="The Small Community Phenomenon in Networks: Models, Algorithms and Applications." data-topics="Clustering, Community Detection &amp; Network Science"><strong><font size="4">The Small Community Phenomenon in Networks: Models, Algorithms and Applications. </font></strong><br/><font size="4">Pan Peng.<br/>In 9th Annual Conference on Theory and Applications of Models of Computation (TAMC 2012). <a href="https://doi.org/10.1007/978-3-642-29952-0_10" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><strong><font size="5">Journal Publications</font>:</strong><br/><br/><div class="pub-entry" data-pub-type="journal" data-title="Testing Cluster Structure of Graphs." data-topics="Sublinear Algorithms &amp; Property Testing|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Testing Cluster Structure of Graphs.</font></strong><br/><font size="4">Artur Czumaj, Pan Peng, Christian Sohler.<br/>ACM Trans. Algorithms (TALG), 2026. <a href="https://doi.org/10.1145/3807605" target="_blank">DOI</a>. <a href="https://arxiv.org/abs/1504.03294" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Streaming algorithms for triangle counting: adversarial robustness and the weighted case." data-topics="Streaming &amp; Massive-Data Algorithms|Privacy, Robustness &amp; Sensitivity"><strong><font size="4">Streaming algorithms for triangle counting: adversarial robustness and the weighted case.</font></strong><br/><font size="4">Jing Cao, Yicheng Pan, Pan Peng.<br/>Frontiers Comput. Sci. 20(1): 2001401 (2026). <a href="https://doi.org/10.1007/s11704-025-41203-9" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span><span class="pub-tag">Privacy, Robustness &amp; Sensitivity</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="On Testability of First-Order Properties in Bounded-Degree Graphs and Connections to Proximity-Oblivious Testing." data-topics="Sublinear Algorithms &amp; Property Testing"><strong><font size="4">On Testability of First-Order Properties in Bounded-Degree Graphs and Connections to Proximity-Oblivious Testing.</font></strong><br/><font size="4">Isolde Adler, Noleen Köhler, Pan Peng.<br/>SIAM J. Comput. 53(4): 825-883 (2024). <a href="https://doi.org/10.1137/23M1556253" target="_blank">DOI</a>. <a href="https://arxiv.org/abs/2304.03810" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Sublinear Algorithms &amp; Property Testing</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Constant-time Dynamic (Δ +1)-Coloring." data-topics="Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Constant-time Dynamic (Δ +1)-Coloring.</font></strong><br/><font size="4">Monika Henzinger, Pan Peng.<br/>ACM Trans. Algorithms 18(2): 16:1-16:21 (2022). <a href="https://arxiv.org/abs/1907.04745" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Time Complexity Analysis of Randomized Search Heuristics for the Dynamic Graph Coloring Problem." data-topics="Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Time Complexity Analysis of Randomized Search Heuristics for the Dynamic Graph Coloring Problem.</font></strong><br/><font size="4">Jakob Bossek, Frank Neumann, Pan Peng, Dirk Sudholt.<br/>Algorithmica 83(10): 3148-3179 (2021). <a href="https://doi.org/10.1007/s00453-021-00838-3" target="_blank">DOI</a>. <a href="https://arxiv.org/abs/2105.12525" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Constant-time dynamic weight approximation for minimum spanning forest." data-topics="Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Constant-time dynamic weight approximation for minimum spanning forest.</font></strong><br/><font size="4">Monika Henzinger, Pan Peng.<br/>Inf. Comput. 281: 104805 (2021). <a href="https://arxiv.org/abs/2011.00977" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Mixed-order spectral clustering for complex networks." data-topics="Spectral Graph Algorithms &amp; Sparsification|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Mixed-order spectral clustering for complex networks.</font></strong><br/><font size="4">Yan Ge, Pan Peng, Haiping Lu.<br/>Pattern Recognit. 117: 107964 (2021). <a href="https://doi.org/10.1016/j.patcog.2021.107964" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Improved Guarantees for Vertex Sparsification in Planar Graphs." data-topics="Spectral Graph Algorithms &amp; Sparsification"><strong><font size="4">Improved Guarantees for Vertex Sparsification in Planar Graphs.</font></strong><br/><font size="4">Gramoz Goranci, Monika Henzinger, Pan Peng.<br/>SIAM J. Discret. Math. 34(1): 130-162 (2020). <a href="https://arxiv.org/abs/1702.01136" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Dynamic Graph Stream Algorithms in o(n) Space." data-topics="Streaming &amp; Massive-Data Algorithms|Dynamic Graph Algorithms &amp; Evolutionary Computation"><strong><font size="4">Dynamic Graph Stream Algorithms in o(n) Space.</font></strong><br/><font size="4">Zengfeng Huang, Pan Peng.<br/>Algorithmica 81(5): 1965-1987 (2019). <a href="https://arxiv.org/abs/1605.00089" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Streaming &amp; Massive-Data Algorithms</span><span class="pub-tag">Dynamic Graph Algorithms &amp; Evolutionary Computation</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Spectral concentration and greedy k-clustering." data-topics="Spectral Graph Algorithms &amp; Sparsification|Clustering, Community Detection &amp; Network Science"><strong><font size="4">Spectral concentration and greedy k-clustering.</font></strong><br/><font size="4">Tamal K. Dey, Pan Peng, Alfred Rossi, Anastasios Sidiropoulos.<br/>Comput. Geom. 76: 19-32 (2019). <a href="https://arxiv.org/abs/1404.1008" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Spectral Graph Algorithms &amp; Sparsification</span><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Global core, and galaxy structure of networks." data-topics="Clustering, Community Detection &amp; Network Science"><strong><font size="4">Global core, and galaxy structure of networks.</font></strong><br/><font size="4">Wei Zhang, Yicheng Pan, Pan Peng, Jiankou Li, Xuechen Li, Angsheng Li.<br/>Sci. China Inf. Sci. 57(7): 1-20 (2014). <a href="https://doi.org/10.1007/s11432-013-4930-6" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Equilibrium Games in Networks." data-topics="Clustering, Community Detection &amp; Network Science"><strong><font size="4">Equilibrium Games in Networks.</font></strong><br/><font size="4">Angsheng Li, Xiaohui Zhang, Yicheng Pan, Pan Peng.<br/>Physica A: Statistical Mechanics and its Applications, Volume 416, Pages 49-60, 2014. <a href="https://doi.org/10.1016/j.physa.2014.08.028" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="The small-community phenomenon in networks." data-topics="Clustering, Community Detection &amp; Network Science"><strong><font size="4">The small-community phenomenon in networks.</font></strong><br/><font size="4">Angsheng Li, Pan Peng.<br/>Math. Struct. Comput. Sci. 22(3): 373-407 (2012). <a href="https://arxiv.org/abs/1107.5786" target="_blank">Arxiv Version</a>.</font><div class="pub-tags"><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div><div class="pub-entry" data-pub-type="journal" data-title="Community Structures in Classical Network Models." data-topics="Clustering, Community Detection &amp; Network Science"><strong><font size="4">Community Structures in Classical Network Models.</font></strong><br/><font size="4">Angsheng Li, Pan Peng.<br/>Internet Math. 7(2): 81-106 (2011). <a href="https://doi.org/10.1080/15427951.2011.566458" target="_blank">DOI</a>.</font><div class="pub-tags"><span class="pub-tag">Clustering, Community Detection &amp; Network Science</span></div></div></div><div id="pub-by-topic"><div class="pub-view-note">Some papers are listed under more than one topic.</div></div></div>
+<!-- Spacer + horizontal rule -->
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"/>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+<!-- Program Committees -->
+<h2 class="wsite-content-title" id="committees" style="text-align:left;">
+<span style="font-weight:bold"><font size="5">Program Committees</font>:</span>
+</h2>
+<div class="paragraph" style="text-align:left;display:block;">
+<font size="4">
+<!-- 添加 SODA 2027 链接 -->
+<a href="https://www.siam.org/conferences-events/siam-conferences/soda27/" target="_blank">SODA 2027</a>,
                         <a href="https://acm-stoc.org/stoc2026/" target="_blank">STOC 2026</a>,
                         <a href="https://icalppodcspaa2026.cs.rhul.ac.uk/icalp/" target="_blank">ICALP 2026</a>,
                         <a href="https://event.ntu.edu.sg/cocoon2026" target="_blank">COCOON 2026</a>,
@@ -500,50 +295,136 @@
                         <a href="http://www.math.ryerson.ca/waw2017/" target="_blank">WAW 2017</a>,
                         <a href="http://www.math.ryerson.ca/waw2016/index.html" target="_blank">WAW 2016</a>,
                         <a href="http://cs.xidian.edu.cn/tamc2016/" target="_blank">TAMC 2016</a>,
-                        <a target="_blank" href="https://www.cs.purdue.edu/waw2015">WAW 2015</a>,
-                        <a target="_blank" href="http://www.comp.nus.edu.sg/~fstephan/tamc2015/tamc2015.html">TAMC 2015</a>,
-                        <a target="_blank" href="http://www.math.ryerson.ca/waw2014/">WAW 2014</a>,
-                        <a target="_blank" href="http://www.annauniv.edu/tamc2014/">TAMC 2014</a>
-                    </font>
-                </div>
+                        <a href="https://www.cs.purdue.edu/waw2015" target="_blank">WAW 2015</a>,
+                        <a href="http://www.comp.nus.edu.sg/~fstephan/tamc2015/tamc2015.html" target="_blank">TAMC 2015</a>,
+                        <a href="http://www.math.ryerson.ca/waw2014/" target="_blank">WAW 2014</a>,
+                        <a href="http://www.annauniv.edu/tamc2014/" target="_blank">TAMC 2014</a>
+</font>
+</div>
+<!-- Spacer + horizontal rule -->
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"/>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+<!-- Teaching -->
+<h2 class="wsite-content-title" id="teach" style="text-align:left;">
+<span style="font-weight:bold"><font size="5">Teaching</font>:</span>
+</h2>
+<div class="paragraph" style="text-align:left;display:block;">
+<strong><font size="4">Graph Theory (Honor Class).</font></strong><font size="4"> 2025, 2026 Fall.</font>
+<br/><br/>
+<strong><font size="4">Algorithms for Big Data.</font></strong><font size="4"> 2022, 2023, 2025 Spring.</font>
+<br/><br/>
+<strong><font size="4">Design and Analysis of Algorithms.</font></strong><font size="4"> 2022, 2023, 2024 Fall; 2026 Spring.</font>
+<br/><br/>
+<strong><font size="4">Advanced Algorithms.</font></strong><font size="4"> 2018-2019, 2019-2020, 2020-2021.</font>
+<br/><br/>
+<strong><font size="4">Automata, Computation and Complexity.</font></strong><font size="4"> 2018-2019, 2019-2020, 2020-2021.</font>
+</div>
+<!-- Spacer + horizontal rule -->
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"/>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+<!-- Contact Information -->
+<h2 class="wsite-content-title" id="contact" style="text-align:left;">
+<span style="font-weight: bold;"><font size="5">Contact Information</font>:</span><span style="font-weight: bold;"><br/></span>
+</h2>
+<div class="paragraph" style="text-align:left;">
+<font size="4">
+<span style="color:rgb(119, 119, 119)">
+                            Pan Peng <br/>
+                            School of Computer Science and Technology<br/>
+                            University of Science and Technology of China<br/>
+<span style="position:relative;float:left;z-index:1;;clear:left;margin-top:14px;*margin-top:28px">
+<a>
+<img alt="email" class="wsite-image galleryImageBorderBlack" height="30" src="index_files/panemail.PNG" style="margin-top: 0px; margin-bottom: 10px; margin-left: -7px; margin-right: 10px; border-width:0;" width="250"/>
+</a>
+<div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div>
+</span>
+</span>
+</font>
+</div>
+<!-- Final spacer + horizontal rule -->
+<div>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"/>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div>
+</div>
+</div><!-- end wsite-content -->
+</div><!-- end container -->
+</div><!-- end main-wrap -->
+<script id="publication-view-script">
+(function () {
+    const topicOrder = [
+        "Sublinear Algorithms & Property Testing",
+        "Streaming & Massive-Data Algorithms",
+        "Learning-Augmented Algorithms",
+        "Privacy, Robustness & Sensitivity",
+        "Spectral Graph Algorithms & Sparsification",
+        "Clustering, Community Detection & Network Science",
+        "Quantum Algorithms",
+        "Dynamic Graph Algorithms & Evolutionary Computation"
+    ];
 
-                <!-- Spacer + horizontal rule -->
-                <div>
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                    <hr class="styled-hr" style="width:100%;">
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                </div>
+    function buildTopicView() {
+        const chronological = document.getElementById('pub-chronological');
+        const topicView = document.getElementById('pub-by-topic');
+        if (!chronological || !topicView || topicView.dataset.built === '1') return;
 
-                <!-- Contact Information -->
-                <h2 id="contact" class="wsite-content-title" style="text-align:left;">
-                    <span style="font-weight: bold;"><font size="5">Contact Information</font>:</span><span style="font-weight: bold;"><br></span>
-                </h2>
-                <div class="paragraph" style="text-align:left;">
-                    <font size="4">
-                        <span style="color:rgb(119, 119, 119)">
-                            Pan Peng <br>
-                            School of Computer Science and Technology<br>
-                            University of Science and Technology of China<br>
-                            <span style="position:relative;float:left;z-index:1;;clear:left;margin-top:14px;*margin-top:28px">
-                                <a>
-                                    <img class="wsite-image galleryImageBorderBlack" src="index_files/panemail.PNG" width="250" height="30" style="margin-top: 0px; margin-bottom: 10px; margin-left: -7px; margin-right: 10px; border-width:0;" alt="email">
-                                </a>
-                                <div style="display: block; font-size: 90%; margin-top: -10px; margin-bottom: 10px; text-align: center;"></div>
-                            </span>
-                        </span>
-                    </font>
-                </div>
+        const entries = Array.from(chronological.querySelectorAll('.pub-entry'));
+        topicOrder.forEach(function (topicName) {
+            const matching = entries.filter(function (entry) {
+                return (entry.dataset.topics || '').split('|').includes(topicName);
+            });
+            if (!matching.length) return;
 
-                <!-- Final spacer + horizontal rule -->
-                <div>
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                    <hr class="styled-hr" style="width:100%;">
-                    <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                </div>
+            const group = document.createElement('div');
+            group.className = 'topic-group';
+            const title = document.createElement('div');
+            title.className = 'topic-group-title';
+            title.textContent = topicName;
+            group.appendChild(title);
 
-            </div><!-- end wsite-content -->
-        </div><!-- end container -->
-    </div><!-- end main-wrap -->
+            matching.forEach(function (entry) {
+                const clone = entry.cloneNode(true);
+                const type = entry.dataset.pubType;
+                if (type === 'journal') {
+                    const tags = clone.querySelector('.pub-tags');
+                    if (tags) {
+                        const journalTag = document.createElement('span');
+                        journalTag.className = 'pub-tag';
+                        journalTag.textContent = 'Journal';
+                        tags.appendChild(journalTag);
+                    }
+                }
+                group.appendChild(clone);
+            });
+            topicView.appendChild(group);
+        });
+        topicView.dataset.built = '1';
+    }
 
-</body>
+    window.setPublicationView = function (view) {
+        const chronological = document.getElementById('pub-chronological');
+        const topicView = document.getElementById('pub-by-topic');
+        if (!chronological || !topicView) return;
+        buildTopicView();
+        const isTopic = view === 'topic';
+        chronological.style.display = isTopic ? 'none' : 'block';
+        topicView.style.display = isTopic ? 'block' : 'none';
+        document.querySelectorAll('.pub-view-btn').forEach(function (btn) {
+            btn.classList.toggle('active', btn.dataset.pubView === view);
+        });
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', buildTopicView);
+    } else {
+        buildTopicView();
+    }
+})();
+</script></body>
 </html>
